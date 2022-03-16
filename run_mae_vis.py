@@ -48,7 +48,7 @@ def get_args():
     parser.add_argument('--mask_ratio', default=0.75, type=float,
                         help='ratio of the visual tokens/patches need be masked')
     # Model parameters
-    parser.add_argument('--model', default='pretrain_mae_base_patch32_256', type=str, metavar='MODEL',
+    parser.add_argument('--model', default='pretrain_mae_base_patch16_224', type=str, metavar='MODEL',
                         help='Name of model to vis')
     parser.add_argument('--drop_path', type=float, default=0.0, metavar='PCT',
                         help='Drop path rate (default: 0.1)')

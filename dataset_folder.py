@@ -47,6 +47,7 @@ def make_dataset(
     is_valid_file: Optional[Callable[[str], bool]] = None,
 ) -> List[Tuple[str, int]]:
     instances = []
+    print("directory: ", directory)
     directory = os.path.expanduser(directory)
     both_none = extensions is None and is_valid_file is None
     both_something = extensions is not None and is_valid_file is not None

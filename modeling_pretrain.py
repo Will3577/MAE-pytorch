@@ -332,6 +332,7 @@ def pretrain_mae_base_patch32_256(pretrained=False, **kwargs):
     model = PretrainVisionTransformer(
         img_size=256,
         patch_size=32, 
+        num_classes=3072,
         encoder_embed_dim=3072, 
         encoder_depth=12, 
         encoder_num_heads=12,
